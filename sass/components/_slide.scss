@@ -1,3 +1,95 @@
-.container{
+.body {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    overflow: hidden;
+    width: 100rem;
+    height: 55rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.slide {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    max-width: 120rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: url(../images/pattern-curve.svg);
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__text {
+        position: relative;
+        left: 7rem;
+        top: 1rem;
+
+        &::before {
+            content: url(../images/pattern-quotes.svg);
+            position: absolute;
+            margin-top: -5rem;
+            margin-left: 7rem;
+        }
+
+        p {
+            font-size: 3rem;
+            color: $Dark-Blue;
+        }
+
+        h4 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            color: $Dark-Blue;
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-left: 1rem;
+            color: $Grayish-Blue;
+        }
+    }
+
+    &__image {
+
+        img {
+            width: 50rem;
+            height: 50rem;
+            border-radius: 50%;
+            margin-top: 2rem;
+            box-shadow: -.5rem 1rem 2rem rgba($color: #000000, $alpha: .2);
+        }
+
+        .btn {
+            display: flex;
+            color: $Grayish-Blue;
+            border-radius: 5rem;
+            position: absolute;
+            bottom: 5rem;
+            right: 40rem;
+            background-color: #ffffff;
+            padding: 2rem;
+            box-shadow: .5rem -.5rem 2rem rgba($color: #000000, $alpha: .2);
+            z-index: 10;
+
+            &__right {
+                padding-right: 3rem;
+                cursor: pointer;
+            }
+
+            &__left {
+                cursor: pointer;
+            }
+        }
+    }
 }
