@@ -1,7 +1,7 @@
 {
-  "name": "form-validation",
+  "name": "Testimonials-Slider",
   "version": "1.0.0",
-  "description": "form-validation with javascript",
+  "description": "Testimonials-Slider",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Godswilldev/form-validation.git"
+    "url": "git+https://github.com/Godswilldev/Testimonials-Slider.git"
   },
   "author": "Godswilldev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Godswilldev/form-validation/issues"
+    "url": "https://github.com/Godswilldev/Testimonials-Slider/issues"
   },
-  "homepage": "https://github.com/Godswilldev/form-validation#readme",
+  "homepage": "https://github.com/Godswilldev/Testimonials-Slider#readme",
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
