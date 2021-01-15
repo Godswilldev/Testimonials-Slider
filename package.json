@@ -30,6 +30,7 @@
     "postcss-cli": "^8.3.0"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "postcss": "^8.2.4"
   }
 }
